@@ -39,7 +39,14 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-
+@font-face {
+  font-family: exwayer;
+  src: url(http://localhost:3000/exwayer.ttf);
+}
+.h1{
+  font-family: 'exwayer';
+  font-size: 4rem;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -104,4 +111,39 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.note {
+  background: black;
+  background-color:#101010;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px blue;
+  padding: 10px ;
+  width: 60rem;
+  margin: 15px ;
+  float: left;
+}
+.margin-top{
+  margin-top: 5rem;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
 }
